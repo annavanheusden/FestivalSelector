@@ -15,13 +15,15 @@ class CreateFestivalsTable extends Migration
     {
         Schema::dropIfExists('festivals');
         Schema::create('festivals', function (Blueprint $table) {
-            $table->id();
+            $table->id('festival_id');
             $table->string('titel');
             $table->date('begindatum');
             $table->date('einddatum');
             $table->float('prijs');
             $table->text('Covid info');
             $table->timestamps();
+            $table->string('stad');
+            $table->integer('land_id'); 
         });
     }
 

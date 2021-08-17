@@ -7,6 +7,9 @@ use App\Models\Festival;
 
 class FestivalController extends Controller
 {
+    public function festivalsInLand(){
+        return Festival::find(1)->land; 
+    }
     /**
      * Display a listing of the resource.
      *

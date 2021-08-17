@@ -20,5 +20,4 @@ class Festival extends Model
                     ->as('genre')
                     ->withPivot('score');
     }
-    
 }

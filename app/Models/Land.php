@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Land extends Model
 {
     use HasFactory;
+    
+    public function festival() {
+        return $this->hasMany('App\Model\Festival');
+    }
 }
