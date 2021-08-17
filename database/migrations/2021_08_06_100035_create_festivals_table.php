@@ -13,6 +13,7 @@ class CreateFestivalsTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('festivals');
         Schema::create('festivals', function (Blueprint $table) {
             $table->id();
             $table->string('titel');
