@@ -12,6 +12,7 @@
         </a>
         
         <p><strong>€ {{ $festival->prijs }}</strong></p>
+        <p><strong>{{ $festival->stad }}</strong></p>
         
     </div>
 @endforeach
