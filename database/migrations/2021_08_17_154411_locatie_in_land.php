@@ -13,7 +13,7 @@ class LocatieInLand extends Migration
      */
     public function up()
     {
-        Schema::table('festival', function (Blueprint $table) {
+        Schema::table('festivals', function (Blueprint $table) {
             $table->integer('land_id'); 
         });
     }

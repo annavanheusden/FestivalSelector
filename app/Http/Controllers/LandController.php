@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class LandController extends Controller
 {
     public function landVanFestival(){
-        return Land::find(1)->festival; 
+        return Land::find(1)->festivals; 
     }
     /**
      * Display a listing of the resource.

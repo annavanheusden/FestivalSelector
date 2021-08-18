@@ -15,7 +15,7 @@ class CreateFestivalsTable extends Migration
     {
         Schema::dropIfExists('festivals');
         Schema::create('festivals', function (Blueprint $table) {
-            $table->id('festival_id');
+            $table->id('festivals_id');
             $table->string('titel');
             $table->date('begindatum');
             $table->date('einddatum');
