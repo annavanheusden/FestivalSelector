@@ -23,7 +23,6 @@ class CreateFestivalsTable extends Migration
             $table->text('Covid info');
             $table->timestamps();
             $table->string('stad');
-            $table->integer('land_id'); 
         });
     }
 

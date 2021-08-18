@@ -14,7 +14,7 @@ class CreateLandTable extends Migration
     public function up()
     {
         Schema::create('land', function (Blueprint $table) {
-            $table->id();
+            $table->id('land_id');
             $table->timestamps();
         });
     }
