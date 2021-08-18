@@ -9,7 +9,7 @@ class Land extends Model
 {
     use HasFactory;
     
-    public function festival() {
+    public function festivals() {
         return $this->hasMany('App\Model\Festival');
     }
 }

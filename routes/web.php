@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 
-Route::resource('festivals', FestivalController::class);
+Route::get('festivals', [FestivalController::class, "index"]);
+Route::get('festivals/{id}', [FestivalController::class, "detail"]);

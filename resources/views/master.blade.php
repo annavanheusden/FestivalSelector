@@ -10,7 +10,9 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" 
-                src="{{ URL::asset('javascript.js') }}"></script>
+                src="{{ URL::asset('javascript.js') }}">
+                createEditableSelect(document.forms[0].myText);
+        </script>
     </head>
     <body>
         <h1 style="color:red">@yield("titel")</h1>

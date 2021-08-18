@@ -7,9 +7,6 @@ use App\Models\Festival;
 
 class FestivalController extends Controller
 {
-    public function festivalsInLand(){
-        return Festival::find(1)->land; 
-    }
     /**
      * Display a listing of the resource.
      *
@@ -20,6 +17,17 @@ class FestivalController extends Controller
         return view("FestivalGallery")->with("festivals",Festival::all());
     }
 
+    
+    public function detail($id)
+    {
+        $festival = Festival::find($id);
+        return view("FestivalDetail")->with("festival", $festival);
+    }
+    
+    public function festivalsInLand(){
+        return Festival::find(1)->land;
+    }
+    
     /**
      * Show the form for creating a new resource.
      *
