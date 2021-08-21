@@ -25,8 +25,10 @@ class LocatieInLand extends Migration
      */
     public function down()
     {
-        Schema::table('land', function (Blueprint $table) {
-            //
-        });
+        if (Schema::hasColumn('festivals', 'land_id')) {
+            Schema::table('festivals', function(Blueprint $table) {
+                $table->dropColumn('land_id');
+            });
+        }
     }
 }

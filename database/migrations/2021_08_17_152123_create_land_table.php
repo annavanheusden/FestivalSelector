@@ -13,8 +13,9 @@ class CreateLandTable extends Migration
      */
     public function up()
     {
-        Schema::create('land', function (Blueprint $table) {
-            $table->id('land_id');
+        Schema::create('lands', function (Blueprint $table) {
+            $table->id();
+            $table->string('naam');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateLandTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('land');
+        Schema::dropIfExists('lands');
     }
 }

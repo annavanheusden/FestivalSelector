@@ -24,7 +24,7 @@ class FestivalsTableSeeder extends Seeder
             'CovidInfo' => '2x Gevaccineerd. Negatieve test geldig voor 2 dagen. Bewijs van genezing.',
             'foto' => 'https://www.pukkelpop.be/assets/default/dist/images/pkp21_social_share.6f43663d.jpg',
             'stad' => 'Hasselt',
-            'land_id' => rand(1,1000)
+            'land_id' => 1
         ]);
         DB::table('festivals')->insert([
             'titel' => 'Rock Werchter 2022',
@@ -34,7 +34,7 @@ class FestivalsTableSeeder extends Seeder
             'CovidInfo' => 'Nog niet bekend...',
             'foto' => 'https://help.ticketmaster.be/hc/article_attachments/4402697792657/RW22-banner-600x300.jpg',
             'stad' => 'Werchter',
-            'land_id' => rand(1,1000)
+            'land_id' => 1
         ]);
         for($i = 0; $i < 18; $i++){
            $year = strval(rand(2021,2023));
@@ -48,7 +48,7 @@ class FestivalsTableSeeder extends Seeder
             'CovidInfo' => $faker->sentence,
             'foto' => 'https://media.resources.festicket.com/www/photos/MusicOn2022_A.jpg',
             'stad' => $faker->city,
-            'land_id' => rand(1,1000)
+            'land_id' => rand(1,6)
             ]); 
         }
     }
