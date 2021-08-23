@@ -21,4 +21,7 @@ and open the template in the editor.
         <hr style="clear:both"/>
         <p><em>Copyright-notice</em></p>
     </body>
+    <footer>
+        <a href="/festivals/api/documentation">API Documentation</a>
+    </footer>
 </html>

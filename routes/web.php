@@ -21,5 +21,4 @@ Route::get('/', function () {
 
 Route::get('festivals', [FestivalController::class, "index"]);
 Route::get('festivals/{id}', [FestivalController::class, "detail"]);
-Route::get('festivals/soap/test', [FestivalController::class, "SoapTest"]);
-
+Route::get('festivals/api/documentation', [FestivalController::class, "APIDocumentation"]);

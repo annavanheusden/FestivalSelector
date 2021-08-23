@@ -8,7 +8,7 @@
 
 function pythonService(price) {
     var currency = document.getElementById("CurrencyCode").value;
-    url = "http://127.0.0.1:5000/convert/"+ price + "/" + currency;
+    url = "https://thomasc-restapi.azurewebsites.net/convert/"+ price + "/" + currency;
     fetch(url)
         .then(response => response.json())
         .then(json => changeHTMLCurrency(json));

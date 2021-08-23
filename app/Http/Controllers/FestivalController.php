@@ -22,22 +22,9 @@ class FestivalController extends Controller
         return view("FestivalGallery")->with("festivals",Festival::all())
                                       ->with("landen",Land::all());
     }
-
-    public function SoapTest(){
-        
-        $sw = new SoapWrapper();
-        $sw->add("CovidInfoProvider", function ($service) {
-            $service
-                    ->wsdl("http://localhost:56254/CovidInfoProvider.asmx?WSDL")
-                    ->trace(true)
-                    ->classmap([
-                        CovidInfo::class
-                    ]);
-        });
-        
-        $response = $sw->call("CovidInfoProvider.HelloWorld", [new CovidInfo(17)]);
-        $value = $response->HelloWorldResult;
-        print_r($value);
+    
+    public function APIDocumentation(){
+        return view("FestivalSelectorDocumentation");
     }
     
     public function detail($id)
@@ -50,7 +37,7 @@ class FestivalController extends Controller
         $sw = new SoapWrapper();
         $sw->add("CovidInfoProvider", function ($service) {
             $service
-                    ->wsdl("http://localhost:56254/CovidInfoProvider.asmx?WSDL")
+                    ->wsdl("https://thomasc-soapapi.azurewebsites.net/CovidInfoProvider.asmx?WSDL")
                     ->trace(true)
                     ->classmap([
                         CovidInfo::class

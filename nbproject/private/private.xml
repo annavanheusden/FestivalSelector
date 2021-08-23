@@ -4,14 +4,29 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/FestivalSelector/resources/views/welcome.blade.php</file>
-            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Models/Land.php</file>
-            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Http/Controllers/LandController.php</file>
-            <file>file:/C:/xampp/htdocs/FestivalSelector/resources/views/FestivalGallery.blade.php</file>
-            <file>file:/C:/xampp/htdocs/FestivalSelector/database/migrations/2021_08_06_124632_add_foto_festivals.php</file>
-            <file>file:/C:/xampp/htdocs/FestivalSelector/routes/web.php</file>
-            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Http/Controllers/FestivalController.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/public/robots.txt</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/resources/views/AlleenFestivals.blade.php</file>
             <file>file:/C:/xampp/htdocs/FestivalSelector/database/migrations/2021_08_06_100035_create_festivals_table.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/database/migrations/2021_08_17_154411_locatie_in_land.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Models/User.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/routes/channels.php</file>
             <file>file:/C:/xampp/htdocs/FestivalSelector/app/Models/Festival.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/public/javascript.js</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/database/migrations/2021_08_17_152123_create_land_table.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/database/seeders/DatabaseSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Http/Controllers/LandController.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/app/SOAP/CovidInfo.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/database/seeders/FestivalsTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/database/seeders/LandTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Models/Land.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/config/app.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/resources/views/FestivalGallery.blade.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/resources/views/FestivalDetail.blade.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/database/migrations/2021_08_06_124632_add_foto_festivals.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Models/Genre.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/routes/api.php</file>
+            <file>file:/C:/xampp/htdocs/FestivalSelector/app/Http/Controllers/FestivalController.php</file>
             <file>file:/C:/xampp/htdocs/FestivalSelector/resources/views/master.blade.php</file>
         </group>
     </open-files>

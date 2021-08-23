@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'base64:kCBVc9Nx8PcFf+P/WUk9gqxuPj/EadP2RzwBGlEzWoA='),
+    'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Artisaninweb\SoapWrapper\ServiceProvider::class, 
+        
     ],
 
     /*
@@ -228,7 +230,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'SoapWrapper' => Artisaninweb\SoapWrapper\Facade\SoapWrapper::class,  
     ],
 
 ];
